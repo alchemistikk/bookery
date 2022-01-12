@@ -14,10 +14,11 @@ function appendToBookery(book) {
   bookery.push(book);
 }
 
+let bookcase = document.getElementById("bookcase");
+
 function displayBookery() {
-  // Eventually display this in viewport, not console
   for (let i = 0; i < bookery.length; i++) {
-    console.log(bookery[i])
+    bookcase.appendChild(document.createElement("div")).innerHTML = bookery[i].info();
   }
 }
 
@@ -26,3 +27,12 @@ let sunAlso = new Book('The Sun Also Rises', 'Ernest Hemingway', 259, 'no')
 appendToBookery(gatsby)
 appendToBookery(sunAlso)
 displayBookery()
+
+// Need a button that brings up a form that allows users to enter
+// info about a new book
+let fresh = document.getElementById('new-book-button');
+fresh.onclick = displayBookeryForm()
+
+function displayBookeryForm() {
+
+}
