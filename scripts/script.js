@@ -36,3 +36,11 @@ fresh.onclick = displayBookeryForm()
 function displayBookeryForm() {
 
 }
+
+function stealUserBookIdeas() {
+  let title = document.getElementById("new-book-title");
+  let author = document.getElementById("new-book-author");
+  let pages = document.getElementById("new-book-pages");
+  let read = document.getElementById("new-book-read");
+  return { title, author, pages, read }
+}

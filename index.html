@@ -11,6 +11,15 @@
 
 <body>
   <button id="new-book-button">Add Fresh Book</button>
+  <form>
+    <input type="text" name="" placeholder="Title" id="new-book-title">
+    <input type="text" name="" placeholder="Author" id="new-book-author">
+    <input type="number" name="" placeholder="# of Pages" id="new-book-pages">
+    <!-- Something below smells fishy. How can I capture the value of a radio input? -->
+    <input type="radio" name="read?" placeholder="Title" id="new-book-read">
+    <input type="radio" name="read?" placeholder="Title" id="new-book-read">
+    <input type="submit" onclick="stealUserBookIdeas()">
+  </form>
   <div id="bookcase"></div>
   <script src="./scripts/script.js"></script>
 </body>
